@@ -90,7 +90,7 @@ class GoHoverBehavior(Widget):
 				if GoHoverBehavior.__resizes:
 					Window.bind(mouse_pos=GoHoverBehavior.__resizes[0].on_mouse_update)
 					Window.bind(on_cursor_leave=GoHoverBehavior.__resizes[0].window_cursor_leave)
-			else:
+			elif self in GoHoverBehavior.__resizes:
 				GoHoverBehavior.__resizes.remove(self)
 
 	def window_cursor_leave(self, *args):
