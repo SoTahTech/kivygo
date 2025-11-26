@@ -27,19 +27,13 @@ build-backend = "hatchling.build"
 packages = ["kivygo"]
 
 [tool.hatch.build]
-include = [
-    "kivygo/**/*.glsl",
-    "kivygo/**/*.ttf",
-    "kivygo/**/*.kv",
-    "kivygo/**/*.frag",
-    "kivygo/**/*.atlas",
-    "kivygo/**/*.pex",
-    "kivygo/**/*.bounds",
-]
+include = ["kivygo/"]
 
 exclude = [
     "kivygo/Documentation/**",
     "kivygo/images_example/**",
     "kivygo/visual_editor/**",
     "kivygo/examples/**",
+    "kivygo/images/**",
+    "kivygo/icons/**",
 ]
