@@ -16,7 +16,7 @@ class CustomTransition(ShaderTransition):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         with open(path.join(EXTRA, "header.glsl")) as header, open(
-            path.join(PATH, self.glsl_file)
+            path.join(EXTRA, self.glsl_file)
         ) as glsl, open(path.join(EXTRA, "footer.glsl")) as footer:
             self.fs = header.read() + glsl.read() + footer.read()
 
