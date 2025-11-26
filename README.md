@@ -238,7 +238,29 @@ Para ver quantidade de linhas do código no Visual Studio Code:
 
 # Build to PYPI
 
- - `python setup.py sdist`
- - `twine upload dist/*`
+Hoje, com o **uv**, o processo padrão é este:
+
+1. Gere o pacote (sdist + wheel)
+
+```
+uv build
+```
+
+Isso cria os arquivos dentro de `dist/`.
+
+2. Envie para o PyPI
+   Você pode usar ou o próprio `uv` ou o `twine`.
+
+**Com o uv** (mais atual):
+
+```
+uv publish --token <seu_token>
+```
+
+**Ou com twine** (funciona igual):
+
+```
+twine upload dist/*
+```
 
 <br>[⬆ Voltar ao topo](#kivygo)<br>
