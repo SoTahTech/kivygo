@@ -1,0 +1,265 @@
+/kivygo
+├── .github/
+│   └── workflows/
+│       └── build.yml
+├── .gitignore
+├── .python-version
+├── Documentation/
+│   └── README.MD
+├── LICENSE.txt
+├── README.md
+├── examples/
+│   ├── KivyShaderTransitions_example.py
+│   ├── __init__.py
+│   ├── all_examples.py
+│   ├── anchorlayout_example.py
+│   ├── anim_bezier_example.py
+│   ├── animlabel_example.py
+│   ├── bezier_canvas_example.py
+│   ├── boxlayout_example.py
+│   ├── button_example.py
+│   ├── camera_example.py
+│   ├── circular_bar_example.py
+│   ├── circularlayout_example.py
+│   ├── color_example.py
+│   ├── datetimepicker_example.py
+│   ├── drag_example.py
+│   ├── effect_example.py
+│   ├── frostglass_example.py
+│   ├── gradient_example.py
+│   ├── gridlayout_example.py
+│   ├── input_example.py
+│   ├── joystick_example.py
+│   ├── kivg_example.py
+│   ├── label_gradient_example.py
+│   ├── navigationdrawer_example.py
+│   ├── particle_example.py
+│   ├── pipette_example.py
+│   ├── pizzagraph_example.py
+│   ├── progressspinner_example.py
+│   ├── radialslider_example.py
+│   ├── resize_example.py
+│   ├── rotabox_example.py
+│   ├── segment_example.py
+│   ├── shader_example.py
+│   ├── slider_example.py
+│   ├── tab_example.py
+│   └── taptargetview_example.py
+├── images_example/
+│   ├── anchorlayout_0.png
+│   ├── androidtabs_0.gif
+│   ├── androidtabs_demo.png
+│   ├── bezier_0.gif
+│   ├── boxlayout_0.png
+│   ├── button_0.gif
+│   ├── circular_bar_0.gif
+│   ├── circularlayout_demo.png
+│   ├── frostedglass_demo.gif
+│   ├── frostedglass_overview.png
+│   ├── how_to_check_widget.gif
+│   ├── radial.gif
+│   ├── radialslider_correct.png
+│   ├── radialslider_demo.gif
+│   ├── radialslider_wrong_height.png
+│   └── radialslider_wrong_width.png
+├── kivygo/
+│   ├── .python-version
+│   ├── __init__.py
+│   ├── animation.py
+│   ├── app.py
+│   ├── behaviors/
+│   │   ├── __init__.py
+│   │   ├── button.py
+│   │   ├── drag_and_drop.py
+│   │   ├── effect.py
+│   │   ├── hover.py
+│   │   ├── neumorph.py
+│   │   ├── resizable.py
+│   │   └── thumb.py
+│   ├── bounds_math.py
+│   ├── colors.py
+│   ├── config/
+│   │   ├── coins.atlas
+│   │   ├── coins.bounds
+│   │   ├── drugs.pex
+│   │   ├── fire.pex
+│   │   ├── jellyfish.pex
+│   │   ├── particle.pex
+│   │   ├── particle.png
+│   │   └── sun.pex
+│   ├── elevation/
+│   │   ├── elevation.frag
+│   │   ├── header.frag
+│   │   └── main.frag
+│   ├── icons/
+│   │   ├── bg_example.png
+│   │   ├── coins.png
+│   │   ├── discord.svg
+│   │   ├── discord2.svg
+│   │   ├── facebook2.svg
+│   │   ├── github.svg
+│   │   ├── github2.svg
+│   │   ├── github3.svg
+│   │   ├── google.svg
+│   │   ├── google3.svg
+│   │   ├── kivy.png
+│   │   ├── kivy.svg
+│   │   ├── kivy_logo.png
+│   │   ├── kivymd_logo.png
+│   │   ├── pie_chart.svg
+│   │   ├── pipette.png
+│   │   ├── python2.svg
+│   │   ├── search.svg
+│   │   ├── so.svg
+│   │   ├── square.png
+│   │   ├── sublime.svg
+│   │   ├── text.svg
+│   │   ├── transparent.png
+│   │   └── twitter2.svg
+│   ├── images/
+│   │   ├── 6915-green.png
+│   │   ├── Path.png
+│   │   ├── busan.jpg
+│   │   ├── demoimage.jpg
+│   │   ├── icon-kivygo.png
+│   │   ├── iris.jpg
+│   │   ├── lion.jpg
+│   │   ├── navigationdrawer_gradient_ltor.png
+│   │   ├── navigationdrawer_gradient_rtol.png
+│   │   └── test.jpg
+│   ├── layouts/
+│   │   ├── __init__.py
+│   │   ├── anchorlayout.py
+│   │   ├── boxlayout.py
+│   │   ├── circularlayout.py
+│   │   ├── floatlayout.py
+│   │   └── gridlayout.py
+│   ├── palette.py
+│   ├── transformations.py
+│   ├── transitions/
+│   │   ├── __init__.py
+│   │   ├── base.py
+│   │   └── extra/
+│   │       ├── Angular.glsl
+│   │       ├── Bounce.glsl
+│   │       ├── BowTieHorizontal.glsl
+│   │       ├── BowTieVertical.glsl
+│   │       ├── Burn.glsl
+│   │       ├── ButterflyWaveScrawler.glsl
+│   │       ├── CannabisLeaf.glsl
+│   │       ├── Circle.glsl
+│   │       ├── CircleOpen.glsl
+│   │       ├── ColorPhase.glsl
+│   │       ├── ColourDistance.glsl
+│   │       ├── CrazyParametricFun.glsl
+│   │       ├── CrossHatch.glsl
+│   │       ├── CrossWarp.glsl
+│   │       ├── CrossZoom.glsl
+│   │       ├── Cube.glsl
+│   │       ├── DirectionalEasing.glsl
+│   │       ├── DirectionalWarp.glsl
+│   │       ├── DirectionalWipe.glsl
+│   │       ├── Displacement.glsl
+│   │       ├── DoomScreenTransition.glsl
+│   │       ├── Doorway.glsl
+│   │       ├── Dreamy.glsl
+│   │       ├── DreamyZoom.glsl
+│   │       ├── Fade.glsl
+│   │       ├── FadeColor.glsl
+│   │       ├── FadeGrayscale.glsl
+│   │       ├── FilmBurn.glsl
+│   │       ├── FlyEye.glsl
+│   │       ├── GlitchDisplace.glsl
+│   │       ├── GlitchMemories.glsl
+│   │       ├── GridFlip.glsl
+│   │       ├── Heart.glsl
+│   │       ├── Hexagonalize.glsl
+│   │       ├── Kaleidoscope.glsl
+│   │       ├── LeftRight.glsl
+│   │       ├── LinearBlur.glsl
+│   │       ├── Luma.glsl
+│   │       ├── LuminanceMelt.glsl
+│   │       ├── Morph.glsl
+│   │       ├── Mosaic.glsl
+│   │       ├── MultiplyBlend.glsl
+│   │       ├── PageCurl.glsl
+│   │       ├── Perlin.glsl
+│   │       ├── Pinwheel.glsl
+│   │       ├── Pixelize.glsl
+│   │       ├── PolarFunction.glsl
+│   │       ├── PolkaDotsCurtain.glsl
+│   │       ├── Radial.glsl
+│   │       ├── RandomNoise.glsl
+│   │       ├── RandomSquares.glsl
+│   │       ├── Ripple.glsl
+│   │       ├── RotateScaleFade.glsl
+│   │       ├── RotateTransition.glsl
+│   │       ├── SimpleZoom.glsl
+│   │       ├── SquaresWire.glsl
+│   │       ├── Squeeze.glsl
+│   │       ├── StereoViewer.glsl
+│   │       ├── Swap.glsl
+│   │       ├── Swirl.glsl
+│   │       ├── TangentMotionBlur.glsl
+│   │       ├── TopBottom.glsl
+│   │       ├── UndulatingBurnOut.glsl
+│   │       ├── WaterDrop.glsl
+│   │       ├── Wind.glsl
+│   │       ├── WindowBlinds.glsl
+│   │       ├── WindowSlice.glsl
+│   │       ├── WipeDown.glsl
+│   │       ├── WipeLeft.glsl
+│   │       ├── WipeRight.glsl
+│   │       ├── WipeUp.glsl
+│   │       ├── ZoomInCircles.glsl
+│   │       ├── footer.glsl
+│   │       └── header.glsl
+│   ├── utils.py
+│   └── widgets/
+│       ├── __init__.py
+│       ├── bezier.py
+│       ├── button.py
+│       ├── camera.py
+│       ├── circular_bar.py
+│       ├── circulardatetimepicker.py
+│       ├── codeinput.py
+│       ├── effect.py
+│       ├── frostedglass.py
+│       ├── gradient.py
+│       ├── icon.py
+│       ├── image.py
+│       ├── input.py
+│       ├── joystick.py
+│       ├── kivyg_icon.py
+│       ├── label.py
+│       ├── navigationdrawer.py
+│       ├── particle.py
+│       ├── pizza_graph.py
+│       ├── popup.py
+│       ├── progressspinner.py
+│       ├── radialslider.py
+│       ├── rotabox.py
+│       ├── screenmanager.py
+│       ├── scrollview.py
+│       ├── segment.py
+│       ├── shader.py
+│       ├── slider.py
+│       ├── spinner.py
+│       ├── tab.py
+│       ├── taptargetview.py
+│       ├── terminal.py
+│       └── widget.py
+├── pyproject.toml
+├── uv.lock
+└── visual_editor/
+    ├── __init__.py
+    ├── editor.gif
+    ├── rotaboxer/
+    │   ├── __init__.py
+    │   ├── dot.png
+    │   ├── grid.png
+    │   ├── guifont.ttf
+    │   ├── rotaboxer.kv
+    │   ├── settings.json
+    │   └── wait_ani.zip
+    └── rotaboxer.py

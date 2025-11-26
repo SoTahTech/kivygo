@@ -24,7 +24,11 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 # Ensure setuptools includes package data
+packages = ["kivygo"]
 include-package-data = true
 
 [tool.setuptools.package-data]
 "*" = ["*.glsl", "*.ttf", "*.kv", "*.frag", "*.atlas", "*.pex", "*.bounds"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["Documentation/*", "images_example/*", "visual_editor/*", "examples/*"]
