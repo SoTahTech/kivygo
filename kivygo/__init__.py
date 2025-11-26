@@ -1,6 +1,4 @@
 
-__version__ = "0.0.8"
-
 from kivygo.app import GoApp
 from kivy.factory import Factory
 from kivy.lang.builder import Builder
