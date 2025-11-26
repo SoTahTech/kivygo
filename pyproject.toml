@@ -1,6 +1,6 @@
 [project]
 name = "kivygo"
-version = "0.1.1"
+version = "0.1.2"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -19,16 +19,25 @@ dependencies = [
 ]
 
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
 
-[tool.setuptools]
-# Ensure setuptools includes package data
+[tool.hatch.build.targets.wheel]
 packages = ["kivygo"]
-include-package-data = true
 
-[tool.setuptools.package-data]
-"*" = ["*.glsl", "*.ttf", "*.kv", "*.frag", "*.atlas", "*.pex", "*.bounds"]
+[tool.hatch.build]
+include = [
+    "kivygo/**/*.glsl",
+    "kivygo/**/*.ttf",
+    "kivygo/**/*.kv",
+    "kivygo/**/*.frag",
+    "kivygo/**/*.atlas",
+    "kivygo/**/*.pex",
+    "kivygo/**/*.bounds",
+]
 
-[tool.setuptools.exclude-package-data]
-"*" = ["Documentation/*", "images_example/*", "visual_editor/*", "examples/*"]
+exclude = [
+    "kivygo/Documentation/**",
+    "kivygo/images_example/**",
+    "kivygo/visual_editor/**",
+    "kivygo/examples/**",
+]
